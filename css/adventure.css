@@ -1,0 +1,60 @@
+/* General styles */
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #FEBED1;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Backgrounds */
+
+.frida {
+  margin: 0;
+  padding: 0;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../images/museoFrida.webp);
+  background-size: cover;
+  background-position: center;
+}
+
+.info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.description, .schedules, .happyCat {
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0,1);
+  margin: 10px;
+}
+
+.description, .schedules {
+  flex: 1;
+  min-width: 200px;
+}
+
+.happyCat img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px){
+  .info {
+    flex-direction: column;
+    align-items: center;
+  }
+}
