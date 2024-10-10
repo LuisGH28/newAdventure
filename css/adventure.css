@@ -14,16 +14,41 @@ body {
 
 /* Backgrounds */
 
-.frida {
+/* Clase base que aplica las propiedades comunes */
+.museum {
   margin: 0;
   padding: 0;
   height: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(../images/museoFrida.webp);
   background-size: cover;
   background-position: center;
+}
+
+/* Clases específicas con la imagen de fondo */
+.frida {
+  background-image: url(../images/museoFrida.webp);
+}
+
+.paleontology {
+  background-image: url(../images/museoPaleontologia.webp);
+}
+
+.chocolate {
+  background-image: url(../images/museoChocolate.webp);
+}
+
+.aviary {
+  background-image: url(../images/aviarioPolanco.webp);
+}
+
+.muefa {
+  background-image: url(../images/muefa.webp);
+}
+
+.park {
+  background-image: url(../images/parqueJapones.webp);
 }
 
 .info {

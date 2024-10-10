@@ -8,5 +8,42 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap" rel="stylesheet" />
 </head>
 <body>
+  <section class="museum paleontology">
+  </section>
+
+  <section class="info">
+
+    <div class="description">
+      <p id="museumName">Museo de Geología y Paleontología</p> <br />
+      <p> Instituto Politécnico Nacional/Escuela Superior de Ingeniería y Arquitectura Unidad Ticomán </p> <br />
+      <p> Av. Ticomán 600
+        Col. San José Ticomán
+        CP 07340
+        Gustavo A. Madero, Gustavo A. Madero, Ciudad de México</p> <br />
+    </div>
+    
+    <div class="schedules">
+      <p> Horarios </p> <br />
+      <p> Lunes a viernes de 9:00 a 16:00 hrs. </p> <br />
+    </div>
+
+    <div class="happyCat">
+      <img src="../images/michiFeliz.webp" alt="Gatito Feliz">
+    </div> 
+
+    <div class="dayOfDate">
+      <h1>Selecciona una fecha para tu visita</h1>
+
+      <input type="date" id="selected-date" onchange="createTicket()">
+
+      <div id="ticket"> 
+          <h2 id="name">Museo de Frida Kahlo</h2>
+          <p id="day"></p>
+          <button onclick="generatePDF()">Descargar Ticket</button>
+      </div>
+    </div>
+  </section>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="../js/app.js"></script>
 </body>
 </html>

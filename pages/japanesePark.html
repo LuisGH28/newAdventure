@@ -8,5 +8,38 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap" rel="stylesheet" />
 </head>
 <body>
+  <section class="museum park">
+  </section>
+
+  <section class="info">
+
+    <div class="description">
+      <p id="museumName">Parque Masayoshi Ōhira</p> <br />
+      <p> Corredores Esq, Col. Country Club Churubusco, Alc. Coyoacán, 04220 CDMX </p> <br />
+    </div>
+    
+    <div class="schedules">
+      <p> Horarios </p> <br />
+      <p> El parque está abierto las 24 horas del día, todos los días de la semana. No hay restricciones horarias específicas para visitarlo. </p> <br />
+    </div>
+
+    <div class="happyCat">
+      <img src="../images/michiFeliz.webp" alt="Gatito Feliz">
+    </div> 
+
+    <div class="dayOfDate">
+      <h1>Selecciona una fecha para tu visita</h1>
+
+      <input type="date" id="selected-date" onchange="createTicket()">
+
+      <div id="ticket"> 
+          <h2 id="name">Parque Masayoshi Ōhira</h2>
+          <p id="day"></p>
+          <button onclick="generatePDF()">Descargar Ticket</button>
+      </div>
+    </div>
+  </section>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="../js/app.js"></script>
 </body>
 </html>

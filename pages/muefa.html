@@ -8,5 +8,38 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap" rel="stylesheet" />
 </head>
 <body>
+  <section class="museum muefa">
+  </section>
+
+  <section class="info">
+
+    <div class="description">
+      <p id="museumName">Museo del Ejército y Fuerza Armada (Tlalpan)</p> <br />
+      <p>  Tlalpan 1838, col. Country Club, del. Churubusco, Coyoacán, c.P. 04220, Ciudad de México.o</p> <br />
+    </div>
+    
+    <div class="schedules">
+      <p> Horarios </p> <br />
+      <p> Martes a domingo de 10 a 17 h. </p> <br />
+    </div>
+
+    <div class="happyCat">
+      <img src="../images/michiFeliz.webp" alt="Gatito Feliz">
+    </div> 
+
+    <div class="dayOfDate">
+      <h1>Selecciona una fecha para tu visita</h1>
+
+      <input type="date" id="selected-date" onchange="createTicket()">
+
+      <div id="ticket"> 
+          <h2 id="name">Museo del Ejército y Fuerza Armada (Tlalpan)</h2>
+          <p id="day"></p>
+          <button onclick="generatePDF()">Descargar Ticket</button>
+      </div>
+    </div>
+  </section>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="../js/app.js"></script>
 </body>
 </html>
