@@ -14,7 +14,7 @@
   <section class="info">
 
     <div class="description">
-      <p>Museo Frida Kahlo </p> <br />
+      <p id="museumName">Museo Frida Kahlo</p> <br />
       <p> Fideicomiso Museos Diego Rivera y Frida Kahlo </p> <br />
       <p> Londres 247Col. Del Carmen CoyoacánCP 04100Coyoacán, Coyoacán, Ciudad de México</p> <br />
     </div>
@@ -28,11 +28,21 @@
 
     <div class="happyCat">
       <img src="../images/michiFeliz.webp" alt="Gatito Feliz">
+    </div> 
+
+    <div class="dayOfDate">
+      <h1>Selecciona una fecha para tu visita</h1>
+
+      <input type="date" id="selected-date" onchange="createTicket()">
+
+      <div id="ticket"> 
+          <h2 id="name">Museo de Frida Kahlo</h2>
+          <p id="day"></p>
+          <button onclick="generatePDF()">Descargar como PDF</button>
+      </div>
     </div>
   </section>
-
-  
-
-  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="../js/app.js"></script>
 </body>
 </html>
